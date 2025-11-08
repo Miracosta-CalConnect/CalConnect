@@ -3,7 +3,7 @@
 ## CLone repo
 
 ```bash
-git clone https://github.com/KYu-2468/CalConnect.git
+git clone https://github.com/Miracosta-CalConnect/CalConnect.git
 cd CalConnect
 ```
 
