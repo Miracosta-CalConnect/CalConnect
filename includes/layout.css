@@ -1,0 +1,100 @@
+/* includes/layout.css */
+
+/* ---------- Global ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d0d7f1;
+}
+
+/* ---------- Top Nav ---------- */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 1000;
+  background-color: #b9c3e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  height: 45px;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  color: #4d74f8;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 2px 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ---------- Side Nav ---------- */
+.side-nav {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #002b5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 15px 30px;
+  transition: color 0.2s ease;
+}
+
+.side-nav a:hover {
+  color: #b9c3e5;
+  text-decoration: underline;
+}
+
+.side-nav a.active {
+  color: #b9c3e5;
+  text-decoration: underline;
+}

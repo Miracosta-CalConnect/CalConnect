@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d0d7f1;
+}
+
+/* ---------- Top Nav ---------- */
+.top-nav {
+  position: fixed;        /* ✅ keeps it in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 95%;            /* ✅ makes it span the full width */
+  z-index: 1000;          /* ✅ ensures it stays above everything else */
+  background-color: #b9c3e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  height: 45px;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  color: #4d74f8;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 2px 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ---------- Side Nav ---------- */
+.side-nav {
+  position: fixed;
+  top: 66px; /* adjust to sit under top bar */
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #002b5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 15px 30px;
+  transition: color 0.2s ease;
+}
+
+.side-nav a:hover {
+  color: #b9c3e5;
+  text-decoration: underline;
+}
+
+.side-nav a.active {
+  color: #b9c3e5;
+  text-decoration: underline;
+}
+
+/* ---------- Main Layout ---------- */
+.main-content {
+  display: flex;
+  margin-left: 220px;     /* space for side-nav */
+  margin-top: 66px;       /* ✅ pushes content below the fixed top bar */
+  padding: 30px;
+}
+
+/* ---------- Feed ---------- */
+.feed {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  padding: 15px 20px;
+}
+
+.post h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+.post .author {
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.post .tags {
+  margin: 8px 0;
+}
+
+.post .tags span {
+  border: 1px solid black;
+  background-color: #c9c9c9;
+  padding: 3px 8px;
+  margin-right: 6px;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.post .desc {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.post .date {
+  text-align: right;
+  font-weight: bold;
+  margin: 0;
+}
+
+.post-img {
+  width: 150px;
+  margin-top: 10px;
+}
+
+/* ---------- Filter Sidebar ---------- */
+.filters {
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 15px;
+  margin-left: 20px;
+}
+
+.filters h3 {
+  margin-top: 0;
+}
+
+.filter-group {
+  margin-top: 15px;
+}
+
+.filter-group h4 {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+}
+
+/* Make entire post clickable but keep style consistent */
+.post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-link:hover .post {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
